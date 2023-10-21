@@ -1,0 +1,131 @@
+.chat {
+  flex: 0.7;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #1f2c33;
+}
+
+.chat__header {
+  display: flex;
+  align-items: center;
+  padding: 0.4em 1.2em;
+  background-color: #1f2c33;
+  color: #fff;
+  z-index: 100;
+}
+
+.chat__headerInfo {
+  flex: 1;
+  padding-left: 0.8em;
+}
+
+.chat__headerInfo>h3 {
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+
+.chat__headerInfo>p {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.chat__headerIcons {
+  margin-left: 1em;
+}
+
+.chat__headerIcon {
+  color: #919191 !important;
+}
+
+.chat__body {
+  flex: 1;
+  background-image: url('../images/whatsapp-black.jpeg');
+  background-repeat: repeat;
+  padding: 1.5em 4em;
+  overflow-y: scroll;
+}
+
+.chat__footer {
+  background-color: #1f2c33;
+  display: flex;
+  align-items: center;
+  padding: 0.15em 0.6em;
+}
+
+.chat__footer>form {
+  flex: 1;
+  display: flex;
+}
+
+.chat__footer>form>input {
+  flex: 1;
+  color: #fff;
+  font-size: 14px;
+  border: 0;
+  outline: 0;
+  margin: 5px 5px 5px 0.8em;
+  border-radius: 8px;
+  background: #2a3942;
+  padding: 1em 1em 1em 4em;
+}
+
+.chat__footerMood,
+.chat__footerAttach,
+.chat__footerMic {
+  color: #919191;
+}
+
+.chat__footerMood {
+  font-size: 1.8rem !important;
+}
+
+.chat__footerMic {
+  font-size: 1.8rem !important;
+}
+
+.chat__footerAttach {
+  transform: rotateZ(45deg);
+}
+
+.chat__emojiPicker>.emoji-picker-react {
+  width: 100% !important;
+  height: 0px !important;
+}
+
+.chat__emojiPicker.show>.emoji-picker-react {
+  height: 250px !important;
+}
+
+.chat__footer_e-picket {
+  position: absolute;
+}
+
+aside.emoji-picker-react {
+  background: transparent !important;
+  display: flex;
+  flex-direction: column;
+  height: 320px;
+  width: 280px;
+  font-family: sans-serif;
+  border: 1px solid transparent !important;
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: none !important;
+  overflow: hidden;
+  position: relative;
+}
+
+.emoji-picker-react .emoji-group:before {
+  background: #1f2c33 !important;
+}
+
+.emoji-picker-react input.emoji-search {
+  background: transparent !important;
+  border: 1px solid transparent !important;
+}
+
+.emoji-picker-react .emoji-categories {
+  background: #fff;
+}
+
